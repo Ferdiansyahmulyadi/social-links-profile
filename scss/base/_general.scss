@@ -1,0 +1,35 @@
+//dependencies
+@use '../variables' as *;
+@use '../functions' as *;
+@use '../mixins' as *;
+
+:root {
+  font-family: $font-primary;
+}
+
+@include mobile {
+  .container {
+    max-width: rem-calc(327);
+    max-height: rem-calc(579);
+    padding: 0 0;
+    margin: rem-calc(116.5) auto;
+  }
+}
+
+@include tablet {
+  .container {
+    max-width: rem-calc(456);
+    max-height: rem-calc(611);
+    padding: 0 0;
+    margin: rem-calc(206.5) auto;
+  }
+}
+
+@include desktop {
+  .container {
+    max-width: rem-calc(384);
+    max-height: rem-calc(611);
+    padding: 0 0;
+    margin: rem-calc(174.5) auto;
+  }
+}
